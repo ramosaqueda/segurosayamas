@@ -4,13 +4,13 @@ import logo from '../assets/images/logo-ligth.png';
 
 const MyNavBar = () => {
   return (
-    <header id="header" className="d-flex align-items-center">
+    <header id="header" className="transparent">
       <div className="container d-flex align-items-center justify-content-between">
         <a href="/" className="logo">
           <img src={logo} alt="logo" />
         </a>
 
-        <nav id="navbar" className="navbar">
+        <nav id="navbar" className="de-navbar">
           <ul>
             <li>
               <a className="nav-link scrollto active" href="/">
