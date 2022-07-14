@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Seguros de Vida",
+    "descripcion": "Garantizar a tu familia, el futuro que quieres para ellos en caso de que te pase algo. Tenemos distintos Seguros de Vida",
+    "image": "vida.jpg"
+  },
+  {
+    "title": "Seguros de Vaje",
+    "descripcion": "Servicio de asistencia al viajero en cualquier parte del mundo. Disfruta tus vacaciones completamente relajado.",
+    "image": "viajes.png"
+  },
+  {
+    "title": "Seguros de Hogar",
+    "descripcion": "Tenemos la mejor protección para tu hogar, entregando la tranquilidad que necesitas al traspasar tus riegos, tanto si eres dueño o arrendatario. ",
+    "image": "hogar.jpeg"
+  },
+  {
+    "title": "Seguros de Salud",
+    "descripcion": "En SegurosMás pensamos en ti y en los que mas quieres, por eso contamos con los Seguros de Salud que te darán la tranquilidad que necesitas en aquellos momentos mas dificiles.",
+    "image": "salud.jpeg"
+  },
+  {
+    "title": "Vehiculos",
+    "descripcion": "En SegurosMás contamos con el Seguro automotriz que necesitas para proteger tu automóvil, vehículo pesado o moto",
+    "image": "vehiculo.jpeg"
+  }
+]
