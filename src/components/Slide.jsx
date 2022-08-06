@@ -24,7 +24,25 @@ const Slide = () => {
 
   return (
     <>
+    
       <Carousel fade className={`Carousel d-flex align-items-center ${scroll}`}>
+
+      <Carousel.Item>
+          <img
+            className="d-block w-100 slideR"
+            src="assets/images/slider/s3.jpg"
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <h1>
+              Asesoramos para que elija lo <spam> + </spam> conveniente
+            </h1>
+            <p>
+            Somos Corredores de Seguros con amplia experiencia en seguros Personales y de Empresas
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 slideR"
@@ -41,23 +59,7 @@ const Slide = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 slideR"
-            src="assets/images/slider/s3.jpg"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption>
-            <h1>
-              Asesoramos para que elija lo <spam> + </spam> conveniente
-            </h1>
-            <p>
-              Somos corredores de seguros con amplia experencia en varos tipos
-              de seguros.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+       
         <Carousel.Item>
           <img
             className="d-block w-100 slideR"
