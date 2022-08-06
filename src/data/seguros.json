@@ -1,30 +1,196 @@
 [
   {
+
+    
+
+
     "id": "1",
-    "title": "Seguro de Vida Prtegido +",
+    "title": "Seguros Personales",
     "precio": "10300",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "descripcion": "Para proteger tus bienes y, lo más preciado, tu familia y tu vida",
     "imagen": "../assets/images/gallery/5.jpg",
     "caracterisitcas": [
-      "Esta es una característica del  Seguro, se refiere a que el Seguro de Vida Protegido podría utilizarse de manera que; ",
-      "Esta es una característica del  Seguro, se refiere a que el Seguro de Vida Protegido podría utilizarse de manera que; "
+     "Seguros de Vida con inversión o ahorro",
+     "Seguros de Vida de Protección y Salud",
+     "Seguro Hogar Protegido ( Incendio y Sismo, Robo)",
+     "Seguro Automotriz (Daños Propios y Terceros, Robo)",
+     "Seguro de Responsabilidad Civil "
+
     ],
 
-    "categoria": "vida"
+    "categoria": "personales"
+  },
+
+   
+  {
+    "id": "3",
+    "title": "VEHÍCULO COMERCIAL",
+    "precio": "10300",
+    "descripcion": "",
+    "imagen": "../assets/images/gallery/furgon.jpeg",
+    "caracterisitcas": [
+      "Seguro vehículos comerciales liviano",
+      "Seguro vehículos comerciales pesados",
+      "Seguro flota de vehículo"
+      
+    ],
+    "categoria": "empresas"
   },
 
   {
-    "id": "2",
-    "title": "Seguro de Vida Siempre Juntos",
+    "id": "4",
+    "title": "SEGURO CARGA Y TRANSPORTE",
     "precio": "10300",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "imagen": "../assets/images/gallery/1.jpg",
+    "descripcion": "",
+    "imagen": "../assets/images/gallery/truck1.jpg",
     "caracterisitcas": [
-      "Esta es una característica del  Seguro, se refiere a que el Seguro de Vida Siempre  juntos se podría utilizarse de manera que; ",
-      "Esta es una característica del  Seguro, se refiere a que el Seguro de Vida Siempre  juntos se podría utilizarse de manera que; ",
-      "Esta es una característica del  Seguro, se refiere a que el Seguro de Vida Siempre  juntos se podría utilizarse de manera que; ",
-      "Esta es una característica del  Seguro, se refiere a que el Seguro de Vida Siempre  juntos se podría utilizarse de manera que; "
+      "Seguro Responsabilidad Civil Máxima",
+      "Seguro viajes especificos",
+      "Seguro póliza por proyecto"
     ],
-    "categoria": "vida"
-  }
+    "categoria": "empresas"
+  },
+
+  {
+    "id": "5",
+    "title": "SEGURO DE CONSTRUCCIÓN E INGENIERIA",
+    "precio": "10300",
+    "descripcion": "",
+    "imagen": "../assets/images/gallery/construction.jpg",
+    "caracterisitcas": [
+      "Seguro todo riesgo contratista",
+      "Seguro todo riesgo contratista",
+      "Seguro todo riesgo Montaje",
+      "Seguro obras civiles terminadas",
+      "Seguro equipo electrónico",
+      "Seguro equipo movil"
+    ],
+    "categoria": "empresas"
+  },
+  {"id": "6",
+  "title": "  SEGURO DE INCENDIO PARA EMPRESAS  ",
+  "precio": "10300",
+    "descripcion": "",
+    "imagen": "../assets/images/gallery/construction.jpg",
+    "caracterisitcas": [
+      "Seguro todo riesgo contratista",
+      "Seguro todo riesgo contratista",
+      "Seguro todo riesgo Montaje",
+      "Seguro obras civiles terminadas",
+      "Seguro equipo electrónico",
+      "Seguro equipo movil"
+    ],
+    "categoria": "empresas"
+  },
+ 
+
+  {
+    "id": "7",
+  "title": "SERGURO DE RESPONSABILIDAD CIVIL",
+  "precio": "10300",
+    "descripcion": "",
+    "imagen": "../assets/images/gallery/3.jpg",
+    "caracterisitcas": [ 
+    ],
+    "categoria": "empresas"
+  },
+
+  {
+    "id": "8",
+  "title": "SEGUROS DE GARANTÍA Y CREDITOS","precio": "10300",
+  "descripcion": "",
+  "imagen": "../assets/images/gallery/4.jpg",
+  "caracterisitcas": [ 
+  ],
+  "categoria": "empresas"
+  },
+  {
+    "id": "9",
+    "title": "SEGUROS ESPECIALES",
+    "precio": "10300",
+    "descripcion": "",
+    "imagen": "../assets/images/gallery/4.jpg",
+    "caracterisitcas": [ 
+      "SEGURO AGRICOLA",
+      "SEGURO CASCO MARÍTIMO",
+      "SEGURO YATES",
+      "SEGUROS DE GARANTÍA Y CREDITO"
+
+    ],
+    "categoria": "especiales"
+  },
+  {
+    "id": "10",
+    "title": "SEGUROS CONDOMINIO",
+    "precio": "10300",
+    "descripcion": "MAXIMIZAMOS LAS COBERTURAS DE TU COMUNIDAD",
+    "imagen": "../assets/images/gallery/2.jpg",
+    "caracterisitcas": [ 
+     
+        "Incendio y Sismo, Robo , de áreas comunes",
+        "Responsabilidad civil",
+        "Accidentes personales",
+        "Riesgos políticos",
+        "Riesgo de la naturaleza",
+        "Rotura de Cañerias",
+        "Avería de Maquinaria",
+        "Rotura de Cristales de áreas comunes",
+        "Asistencia áreas Comunes"
+
+
+    ],
+    "categoria": "condominios"
+  },
+    {
+      "id": "11",
+      "title": "SEGUROS OBLIGATORIOS",
+      "precio": "10300",
+      "descripcion": " ",
+      "imagen": "../assets/images/gallery/viajes.jpeg",
+      "caracterisitcas": [ 
+      
+        "Seguros de vigilantes y guardias",
+        "Seguro covid-19 nacional e internacional",
+        "Seguro responsabilidad civil internacional",
+        "Seguro vida conductor",
+        "Seguro vida en viaje o asistencia"
+        
+
+
+      ],
+      "categoria": "obligatorios"
+    },
+
+    {
+      "id": "12",
+      "title": "SEGUROS COLECTIVOS",
+      "precio": "10300",
+      "descripcion": " ",
+      "imagen": "../assets/images/gallery/dental.jpg",
+      "caracterisitcas": [ 
+       
+          "Seguros complementario de salud y vida",
+          "Dental",
+          "Catastrófico",
+          "Seguros de vida",
+          "Seguros de accidentes personales"
+  
+      ],
+      "categoria": "colectivos"
+    }
+  
+
+  
+
+
+
+
+ 
+
+
+
+  
+
+
+
 ]

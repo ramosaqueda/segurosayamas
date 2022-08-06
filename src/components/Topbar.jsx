@@ -19,7 +19,7 @@ const Topbar = () => {
             <i className="d-flex align-items-center">
               <FontAwesomeIcon icon={faEnvelope} />
               <span>
-                <a href="mailto:contact@example.com">
+                <a href="mailto:contacto@segurosayamas.cl">
                   contacto@segurosayamas.cl
                 </a>
               </span>

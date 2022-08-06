@@ -36,7 +36,10 @@ const Cotact = () => {
                 <FontAwesomeIcon icon={faWhatsapp} />
               </i>
               <h3>WhatSapp</h3>
-              <p>+56 9 123456789</p>
+               
+              <a href="https://api.whatsapp.com/send?phone=56994366143" target="_blank">Envíanos un mensaje de WhatsApp <p>+56 9 9436 6143</p></a>
+
+              
             </div>
           </div>
 
@@ -47,7 +50,7 @@ const Cotact = () => {
                 <FontAwesomeIcon icon={faEnvelope} />
               </i>
               <h3>Envienos a:</h3>
-              <p>contact@example.com</p>
+              <p>contact@segurosayamas.cl</p>
             </div>
           </div>
 
@@ -58,7 +61,7 @@ const Cotact = () => {
                 <FontAwesomeIcon icon={faPhone} />
               </i>
               <h3>Llamenos al </h3>
-              <p>+56 9 12345678</p>
+              <p>+56 9 9436 6143</p>
             </div>
           </div>
         </div>

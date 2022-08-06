@@ -1,13 +1,20 @@
 import React from 'react';
-import {
-  BsFillFilePersonFill,
-  BsBuilding,
-  BsTruck,
-  BsFillEmojiDizzyFill,
-  BsFillSignpostSplitFill,
-  BsFillPeopleFill,
-  BsFillHandIndexFill,
-} from 'react-icons/bs';
+
+import { FaExternalLinkSquareAlt
+} from "react-icons/fa";
+
+
+import { 
+  GiPerson,
+  GiShipBow,
+  GiTruck,
+  GiCherish,
+  GiCage,
+  GiFactory
+
+
+ } from "react-icons/gi";
+
 
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -40,17 +47,16 @@ const Services = () => {
                 <div className="icon">
                   <i className="bx bxl-dribbble">
                     {' '}
-                    <BsFillFilePersonFill />{' '}
+                    <GiPerson />{' '}
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/vida">
-                    Seguros de Vida <BsFillHandIndexFill />
+                  <a href="/seguros/personales">
+                    Seguros Personales<FaExternalLinkSquareAlt />
                   </a>
                 </h4>
                 <p>
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
+                  
                 </p>
               </div>
             </div>
@@ -64,18 +70,17 @@ const Services = () => {
                 <div className="icon">
                   <i className="bx bx-file">
                     {' '}
-                    <BsBuilding />
+                    <GiFactory />
                   </i>
                 </div>
                 <h4>
                   <a href="/seguros/empresas">
                     Seguros Empresas
-                    <BsFillHandIndexFill />
+                    <FaExternalLinkSquareAlt />
                   </a>
                 </h4>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
+                   
                 </p>
               </div>
             </div>
@@ -89,18 +94,17 @@ const Services = () => {
                 <div className="icon">
                   <i className="bx bx-tachometer">
                     {' '}
-                    <BsTruck />{' '}
+                    <GiShipBow />{' '}
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/automotriz">
-                    Seguros Automotriz
-                    <BsFillHandIndexFill />
+                  <a href="/seguros/especiales">
+                    Seguros especiales
+                    <FaExternalLinkSquareAlt />
                   </a>
                 </h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
+                
                 </p>
               </div>
             </div>
@@ -113,17 +117,16 @@ const Services = () => {
               <div className="icon-box">
                 <div className="icon">
                   <i className="bx bx-world">
-                    <BsFillEmojiDizzyFill />{' '}
+                    <GiCage />{' '}
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/accidentes">
-                    Seguros de Accidentes <BsFillHandIndexFill />
+                  <a href="/seguros/condominios">
+                    Seguros de Condominios <FaExternalLinkSquareAlt />
                   </a>
                 </h4>
                 <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
+                   
                 </p>
               </div>
             </div>
@@ -137,15 +140,14 @@ const Services = () => {
                 <div className="icon">
                   <i className="bx bx-slideshow">
                     {' '}
-                    <BsFillSignpostSplitFill />
+                    <GiTruck />
                   </i>
                 </div>
                 <h4>
-                  <a href="/">Seguros de viaje</a>
+                  <a href="/seguros/obligatorios">Seguros Obligatorios</a>
                 </h4>
                 <p>
-                  Quis consequatur saepe eligendi voluptatem consequatur dolor
-                  consequuntur
+                  
                 </p>
               </div>
             </div>
@@ -158,20 +160,19 @@ const Services = () => {
               <div className="icon-box">
                 <div className="icon">
                   <i className="bx bx-arch">
-                    <BsFillPeopleFill />{' '}
+                    <GiCherish />{' '}
                   </i>
                 </div>
                 <h4>
-                  <a href="/"> Seguros Colectivos</a>
+                  <a href="/seguros/colectivos"> Seguros Colectivos</a>
                 </h4>
                 <p>
-                  Modi nostrum vel laborum. Porro fugit error sit minus sapiente
-                  sit aspernatur
+                  
                 </p>
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </section>
     </div>
   );

@@ -10,11 +10,18 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Seguros = (props) => {
   const { slug } = useParams();
-  const [products, setProducts] = useState([]);
+ 
+   
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+   }, []);
+
+let  prodSlug = data.filter( (product) => product.categoria.includes(slug))
+
+ 
+
+ 
   /*
   useEffect(() => {
     setTimeout(() => {
@@ -43,7 +50,7 @@ const Seguros = (props) => {
             </p>
           </div>
 
-          {data.map((data, key) => {
+          {prodSlug.map((data, key) => {
             return (
               <div className="row" id="seguros">
                 <div
@@ -61,7 +68,7 @@ const Seguros = (props) => {
                   <h3>{data.title} </h3>
                   <p className="fst-italic">{data.descripcion}</p>
 
-                  <h4>Caracterísitcas del Seguro:</h4>
+                
                   <ul>
                     {data.caracterisitcas.map((cart, k) => {
                       return (
@@ -73,7 +80,7 @@ const Seguros = (props) => {
                     })}
                   </ul>
 
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
                     Contratar
                   </button>
                 </div>
@@ -93,25 +100,3 @@ const Seguros = (props) => {
 };
 
 export default Seguros;
-/*
-const Product = (props) => {
-  const { slug } = useParams();
-  console.log(typeof slug);
-  let name = '';
-  if (typeof slug === 'string') {
-    name = slug;
-  } else {
-    name = props.slug;
-
-
-
-       <div>
-      <h1>SEGUROS</h1>
-      {data.map((data, key) => {
-        return <h1 key={key}>{data.title}</h1>;
-      })}
-    </div>
-
-
-
-  }*/

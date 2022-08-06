@@ -32,14 +32,12 @@ const Footer = () => {
                 Seguros A&A<span>+</span> Ltda.
               </h3>
               <p>
-                Avenida Pacifico
-                <br />
-                1111, La Serena
+                     La Serena
                 <br />
                 Región de Coquimbo
                 <br />
                 <br />
-                <strong>Telefono:</strong> +56 51 123456
+                <strong>Telefono:</strong> +56 9 9436 6143
                 <br />
                 <strong>Email:</strong> contacto@segurosayamas.cl
                 <br />
@@ -54,11 +52,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Conozacanos</a>
+                  <a href="/about">Conozacanos</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Nuestros Servicios</a>
+                  <a href="/services">Nuestros Servicios</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
@@ -72,23 +70,23 @@ const Footer = () => {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Seguros de Vida</a>
+                  <a href="/seguros/personales">Seguros Personales</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Seguros Empresas</a>
+                  <a href="/seguros/empresas">Seguros Empresas</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Seguros Automotríz</a>
+                  <a href="/seguros/especiales">Seguros Especiales</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Seguros de Salud</a>
+                  <a href="/seguros/colectivos">Seguros Colectivos</a>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Otros Seguros</a>
+                  <a href="/seguros/obligatorios">Seguros Obligatorios</a>
                 </li>
               </ul>
             </div>
