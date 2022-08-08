@@ -8,7 +8,7 @@ import {
   faPlus,
 } from '@fortawesome/free-solid-svg-icons';
 import backgroundImage from '../assets/images/background/subheader4.jpg';
-import { useState, useEffect } from 'react';
+import {  useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -70,8 +70,7 @@ const About = () => {
             >
               <h3>Motivos de por que elegirnos</h3>
               <p className="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 
               </p>
               <ul>
                 <li>

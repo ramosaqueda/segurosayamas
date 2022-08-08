@@ -36,7 +36,7 @@ const Slide = () => {
 
           <Carousel.Caption>
             <h1>
-              Asesoramos para que elija lo <spam> + </spam> conveniente
+              Asesoramos para que elija lo <span> + </span> conveniente
             </h1>
             <p>
             Somos Corredores de Seguros con amplia experiencia en seguros Personales y de Empresas
@@ -51,7 +51,7 @@ const Slide = () => {
           />
           <Carousel.Caption>
             <h1>
-              Tranquilidad, <spam>para disfrutar en Familia</spam>
+              Tranquilidad, <span>para disfrutar en Familia</span>
             </h1>
             <p>
               Tenemos los mejores seguros de vida, para su tranquiidad y el de

@@ -59,7 +59,6 @@
     "imagen": "../assets/images/gallery/construction.jpg",
     "caracterisitcas": [
       "Seguro todo riesgo contratista",
-      "Seguro todo riesgo contratista",
       "Seguro todo riesgo Montaje",
       "Seguro obras civiles terminadas",
       "Seguro equipo electrónico",
@@ -68,42 +67,20 @@
     "categoria": "empresas"
   },
   {"id": "6",
-  "title": "  SEGURO DE INCENDIO PARA EMPRESAS  ",
+  "title": "OTROS SEGUROS DE EMPRESAS",
   "precio": "10300",
     "descripcion": "",
-    "imagen": "../assets/images/gallery/construction.jpg",
+    "imagen": "../assets/images/gallery/3.jpg",
     "caracterisitcas": [
-      "Seguro todo riesgo contratista",
-      "Seguro todo riesgo contratista",
-      "Seguro todo riesgo Montaje",
-      "Seguro obras civiles terminadas",
-      "Seguro equipo electrónico",
-      "Seguro equipo movil"
+      "Seguro incendio   para empresas",
+      "Seguro de Responsabilidad Civil ",
+      "Seguro de garantiía y créditos"
+ 
     ],
     "categoria": "empresas"
   },
  
-
-  {
-    "id": "7",
-  "title": "SERGURO DE RESPONSABILIDAD CIVIL",
-  "precio": "10300",
-    "descripcion": "",
-    "imagen": "../assets/images/gallery/3.jpg",
-    "caracterisitcas": [ 
-    ],
-    "categoria": "empresas"
-  },
-
-  {
-    "id": "8",
-  "title": "SEGUROS DE GARANTÍA Y CREDITOS","precio": "10300",
-  "descripcion": "",
-  "imagen": "../assets/images/gallery/4.jpg",
-  "caracterisitcas": [ 
-  ],
-  "categoria": "empresas"
-  },
+ 
   {
     "id": "9",
     "title": "SEGUROS ESPECIALES",

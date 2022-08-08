@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import empresa from '../assets/images/empresas.jpeg';
 import holding from '../assets/images/holding.webp';
 
@@ -31,7 +31,7 @@ const brokeris = props => {
                     <div className="card-body">
                         <h5 className="card-title">Sistema Brokeris Empresas</h5>
                         <p className="card-text">Si Ud. pertenece a una empresas, aquí podrá ver toda la información consolidada de los seguros contratados .</p>
-                        <a href="#" className="btn btn-success">Ingreso Empresas</a>
+                        <a href="https://aya.brokeris.cl/EMPRESAS/" className="btn btn-success" target="_blank">Ingreso Empresas</a>
                     </div>
                     </div>
                 </div>

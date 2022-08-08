@@ -93,7 +93,7 @@ const Footer = () => {
 
             <div className="col-lg-3 col-md-6 footer-links">
               <h4>Nuestras Redes Sociales</h4>
-              <p>Elije el caal de atención que desees.</p>
+              <p>Elije el canal de atención que desees.</p>
               <div className="social-links mt-3">
                 <a href="/" className="twitter">
                   <i className="bx bxl-twitter">
