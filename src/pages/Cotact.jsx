@@ -50,7 +50,9 @@ const Cotact = () => {
                 <FontAwesomeIcon icon={faEnvelope} />
               </i>
               <h3>Envienos a:</h3>
-              <p>contact@segurosayamas.cl</p>
+              <a href="mailto:contacto@segurosayamas.cl">
+              <p>contacto@segurosayamas.cl</p>
+              </a>
             </div>
           </div>
 

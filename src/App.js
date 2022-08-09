@@ -5,11 +5,12 @@ import Topbar from './components/Topbar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Seguros from './components/Seguros';
-//pages
+ //pages
 import Homepage from './pages/Homepage';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Cotact';
+
 import Brokeris from './pages/brokeris';
 
 function App() {
