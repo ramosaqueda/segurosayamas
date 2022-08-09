@@ -2,8 +2,6 @@ import React from 'react';
 import logo from '../assets/images/logo.png';
 import { useState, useEffect } from 'react';
 
- 
-
 const Navbar = () => {
   const [stickyClass, setStickyClass] = useState('');
 
@@ -20,75 +18,72 @@ const Navbar = () => {
     }
   };
 
-   
- 
-  
-
   return (
-    <header id="header" className={`d-flex align-items-center ${stickyClass}`}>
-      <div>
-      <a className="navbar-brand logo" href="/">
-         <img src={logo} alt="" />
-      </a>
-      </div>
-    <nav className="navbar navbar-expand-lg" id="navbar">
-    <div className="container-fluid">
-       
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-           
-             <a className="nav-link   " href="/">
-                HOME
-              </a>
+    <>
+      <div id="header">
+        <div>
+          <a className="navbar-brand logo" href="/">
+            <img src={logo} alt="" />
+          </a>
+        </div>
+        <nav className="navbar navbar-expand-lg">
+          <div className="container-fluid">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
 
-          </li>
-          <li className="nav-item">
-          
-            <a className="nav-link " href="/about">
-              CONOZCANOS
-              </a>
-          </li>
-          <li className="nav-item dropdown">
-              <a className="nav-link " href="/services">
-               NUESTROS SERVICIOS
-              </a>
-          </li>
-          <li className="nav-item">
-              <a className="nav-link  " href="/brokeris">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link   " href="/">
+                    HOME
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link " href="/about">
+                    CONOZCANOS
+                  </a>
+                </li>
+                <li className="nav-item dropdown">
+                  <a className="nav-link " href="/services">
+                    NUESTROS SERVICIOS
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link  " href="/brokeris">
                     BROKERIS
-              </a>
-          </li>
+                  </a>
+                </li>
 
-          <li className="nav-item">
-              <a className="nav-link " href="/contact">
-                CONTACTO
-              </a>
-          </li>
-          <li className="nav-item">
-              <a className="nav-link " href="/contact">
-                DENUNCIA SINIESTRO
-              </a>
-          </li>
-        </ul>
-        
+                <li className="nav-item">
+                  <a className="nav-link " href="/contact">
+                    CONTACTO
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link " href="/contact">
+                    DENUNCIA SINIESTRO
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
-  </nav>
-  </header>
- 
-    
-
-
-
-
+    </>
   );
 };
-
 
 /*
 
@@ -153,5 +148,3 @@ const Navbar = () => {
     </header> 
 */
 export default Navbar;
-
-

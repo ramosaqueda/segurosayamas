@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -7,11 +8,33 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Cotact = () => {
+const Contact = () => {
+  const form = useRef();
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+
+    emailjs
+      .sendForm(
+        'service_itrydx9',
+        'template_smw30d1',
+        form.current,
+        't56Uo3SD0XBm7GAxx'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
@@ -36,10 +59,14 @@ const Cotact = () => {
                 <FontAwesomeIcon icon={faWhatsapp} />
               </i>
               <h3>WhatSapp</h3>
-               
-              <a href="https://api.whatsapp.com/send?phone=56994366143" target="_blank">Envíanos un mensaje de WhatsApp <p>+56 9 9436 6143</p></a>
 
-              
+              <a
+                href="https://api.whatsapp.com/send?phone=56994366143"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Envíanos un mensaje de WhatsApp <p>+56 9 9436 6143</p>
+              </a>
             </div>
           </div>
 
@@ -51,7 +78,7 @@ const Cotact = () => {
               </i>
               <h3>Envienos a:</h3>
               <a href="mailto:contacto@segurosayamas.cl">
-              <p>contacto@segurosayamas.cl</p>
+                <p>contacto@segurosayamas.cl</p>
               </a>
             </div>
           </div>
@@ -76,15 +103,16 @@ const Cotact = () => {
 
           <div className="col-lg-6">
             <p>Si prefiere, ingrese sus datos para contactarlo</p>
-            <form id="contactForm">
+            <form id="contactForm" ref={form} onSubmit={sendEmail}>
               <div className="mb-3">
                 <label className="form-label" htmlFor="name">
                   Nombre
                 </label>
                 <input
                   className="form-control"
-                  id="name"
                   type="text"
+                  name="from_name"
+                  id="from_name"
                   placeholder="Ingrese su nombre"
                 />
               </div>
@@ -95,9 +123,23 @@ const Cotact = () => {
                 </label>
                 <input
                   className="form-control"
-                  id="emailAddress"
                   type="email"
                   placeholder="Email"
+                  name="from_email"
+                  id="from_email"
+                />
+              </div>
+
+              <div className="mb-3">
+                <label className="form-label" htmlFor="phone">
+                  Correo electrónico
+                </label>
+                <input
+                  className="form-control"
+                  type="tel"
+                  placeholder="Ej.: +56912345678"
+                  name="telefono"
+                  id="telefono"
                 />
               </div>
 
@@ -110,13 +152,18 @@ const Cotact = () => {
                   id="message"
                   type="text"
                   placeholder="Su consulta u opinión"
+                  name="message"
                 >
                   {}
                 </textarea>
               </div>
 
               <div className="d-grid">
-                <button className="btn btn-danger btn-lg" type="submit">
+                <button
+                  className="btn btn-danger btn-lg"
+                  type="submit"
+                  value="Send"
+                >
                   Enviar
                 </button>
               </div>
@@ -128,4 +175,4 @@ const Cotact = () => {
   );
 };
 
-export default Cotact;
+export default Contact;
