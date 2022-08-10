@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
- import AOS from 'aos';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,11 +17,9 @@ const Contact = () => {
     AOS.refresh();
   }, []);
 
- 
-
   const sendEmail = (e) => {
     e.preventDefault();
-      emailjs
+    emailjs
       .sendForm(
         'service_0bzoifg',
         'template_njswkcq',
@@ -32,27 +30,26 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           toast.success('Mensaje enviado a nuestro centro de contacto!', {
-            position: "top-right",
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            });
-          
+          });
         },
         (error) => {
           console.log(error.text);
           toast.error('ocurrió un error al enviar el mensaje!', {
-            position: "top-right",
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            });
+          });
         }
       );
   };
@@ -119,7 +116,7 @@ const Contact = () => {
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-6 ">
             {' '}
-            <img src="assets/images/contacto.jpg" alt="Contacto" />
+            <img src="../assets/images/contacto.jpg" alt="Contacto" />
           </div>
 
           <div className="col-lg-6">
@@ -193,7 +190,6 @@ const Contact = () => {
         </div>
       </div>
 
-
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -204,10 +200,9 @@ const Contact = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        />
-        {/* Same as */}
-        <ToastContainer />
-      
+      />
+      {/* Same as */}
+      <ToastContainer />
     </section>
   );
 };

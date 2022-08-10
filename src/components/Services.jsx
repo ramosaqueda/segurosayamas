@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
@@ -9,9 +9,6 @@ import {
   faCar,
   faBuilding,
   faSailboat,
-  
-  
-
 } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -33,12 +30,12 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <a href="/services">SEGUROS PERSONALES</a>
+                <Link to="/services">SEGUROS PERSONALES</Link>
               </h4>
 
               <p className="description">
-              Para proteger tus bienes y, lo más preciado, tu familia y tu vida
-.
+                Para proteger tus bienes y, lo más preciado, tu familia y tu
+                vida .
               </p>
             </div>
           </div>
@@ -51,10 +48,11 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <a href="/services">SEGUROS EMPRESAS</a>
+                <Link to="/services">SEGUROS EMPRESAS</Link>
               </h4>
               <p className="description">
-                Distintos seguros para vehiculos, carga, construcción, incendios, etc.
+                Distintos seguros para vehiculos, carga, construcción,
+                incendios, etc.
               </p>
             </div>
           </div>
@@ -67,10 +65,11 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <a href="/services">SEGUROS ESPECIALES</a>
+                <Link to="/services">SEGUROS ESPECIALES</Link>
               </h4>
               <p className="description">
-                Contamos con una completa oferta de productos de seguros agricolas, casco marítimo, yates, y muchos más.
+                Contamos con una completa oferta de productos de seguros
+                agricolas, casco marítimo, yates, y muchos más.
               </p>
             </div>
           </div>
@@ -83,15 +82,13 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <a href="/services">SEGUROS CONDOMIONIOS</a>
+                <Link to="/services">SEGUROS CONDOMIONIOS</Link>
               </h4>
               <p className="description">
-              Maximizamos las coberturas de tu comunidad.
-
+                Maximizamos las coberturas de tu comunidad.
               </p>
             </div>
           </div>
-
 
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div className="icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -101,15 +98,13 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <a href="/services">SEGUROS OBLIGATORIOS</a>
+                <Link to="/services">SEGUROS OBLIGATORIOS</Link>
               </h4>
               <p className="description">
-              Contamos con todos los seguros obligatorios.
-
+                Contamos con todos los seguros obligatorios.
               </p>
             </div>
           </div>
-
 
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div className="icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -119,11 +114,11 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <a href="/services">SEGUROS COLECTIVOS</a>
+                <Link to="/services">SEGUROS COLECTIVOS</Link>
               </h4>
               <p className="description">
-              Maximisamos sus recursos para entregarles a sus colaboradores las mejores coberturas.
-
+                Maximisamos sus recursos para entregarles a sus colaboradores
+                las mejores coberturas.
               </p>
             </div>
           </div>

@@ -1,10 +1,11 @@
-import {useRef} from 'react';
+import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 import emailjs from '@emailjs/browser';
 
@@ -16,7 +17,7 @@ const Footer = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-      emailjs
+    emailjs
       .sendForm(
         'service_0bzoifg',
         'template_t8ysxi6',
@@ -27,34 +28,33 @@ const Footer = () => {
         (result) => {
           console.log(result.text);
           toast.success('Se ha registrado en nuestra  de contacto!', {
-            position: "top-right",
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            });
-          
+          });
         },
         (error) => {
           console.log(error.text);
           toast.error('ocurrió un error al enviar el mensaje!', {
-            position: "top-right",
+            position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            });
+          });
         }
       );
   };
 
   return (
     <footer id="footer">
-       <ToastContainer
+      <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -64,9 +64,9 @@ const Footer = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        />
-        {/* Same as */}
-        <ToastContainer />
+      />
+      {/* Same as */}
+      <ToastContainer />
       <div className="footer-newsletter">
         <div className="container">
           <div className="row justify-content-center">
@@ -74,10 +74,12 @@ const Footer = () => {
               <h4>Suscribase a nuestra Lista de correos</h4>
               <p>Tenemos mucha información que queremos compartir con usted.</p>
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
-                <input type="email"  
+                <input
+                  type="email"
                   placeholder="Email"
                   name="from_email"
-                  id="from_email"/>
+                  id="from_email"
+                />
                 <input type="submit" value="Subscribe" />
               </form>
             </div>
@@ -93,7 +95,7 @@ const Footer = () => {
                 Seguros A&A<span>+</span> Ltda.
               </h3>
               <p>
-                     La Serena
+                La Serena
                 <br />
                 Región de Coquimbo
                 <br />
@@ -109,19 +111,20 @@ const Footer = () => {
               <h4>Navegar</h4>
               <ul>
                 <li>
-                  <i className="bx bx-chevron-right"></i> <a href="/">Home</a>
+                  <i className="bx bx-chevron-right"></i>{' '}
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/about">Conozacanos</a>
+                  <Link to="/about">Conozacanos</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/services">Nuestros Servicios</a>
+                  <Link to="/services">Nuestros Servicios</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/">Terminos de Servicios</a>
+                  <Link to="/">Terminos de Servicios</Link>
                 </li>
               </ul>
             </div>
@@ -131,23 +134,23 @@ const Footer = () => {
               <ul>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/seguros/personales">Seguros Personales</a>
+                  <Link to="/seguros/personales">Seguros Personales </Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/seguros/empresas">Seguros Empresas</a>
+                  <Link to="/seguros/empresas">Seguros Empresas </Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/seguros/especiales">Seguros Especiales</a>
+                  <Link to="/seguros/especiales">Seguros Especiales </Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/seguros/colectivos">Seguros Colectivos</a>
+                  <Link to="/seguros/colectivos">Seguros Colectivos </Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{' '}
-                  <a href="/seguros/obligatorios">Seguros Obligatorios</a>
+                  <Link to="/seguros/obligatorios">Seguros Obligatorios </Link>
                 </li>
               </ul>
             </div>
@@ -156,24 +159,24 @@ const Footer = () => {
               <h4>Nuestras Redes Sociales</h4>
               <p>Elije el canal de atención que desees.</p>
               <div className="social-links mt-3">
-                <a href="/" className="twitter">
+                <Link to="/" className="twitter">
                   <i className="bx bxl-twitter">
                     {' '}
                     <FontAwesomeIcon icon={faTwitter} />
                   </i>
-                </a>
-                <a href="/" className="facebook">
+                </Link>
+                <Link to="/" className="facebook">
                   <i className="bx bxl-facebook">
                     {' '}
                     <FontAwesomeIcon icon={faFacebook} />
                   </i>
-                </a>
-                <a href="/" className="instagram">
+                </Link>
+                <Link to="/" className="instagram">
                   <i className="bx bxl-instagram">
                     {' '}
                     <FontAwesomeIcon icon={faInstagram} />
                   </i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -189,7 +192,7 @@ const Footer = () => {
           . All Rights Reserved
         </div>
         <div className="credits">
-          Designed by <a href="/">RRAMOS DEV.</a>
+          Designed by <Link to="/">RRAMOS DEV.</Link>
         </div>
       </div>
     </footer>

@@ -1,20 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
-import { FaExternalLinkSquareAlt
-} from "react-icons/fa";
-
-
-import { 
+import {
   GiPerson,
   GiShipBow,
   GiTruck,
   GiCherish,
   GiCage,
-  GiFactory
-
-
- } from "react-icons/gi";
-
+  GiFactory,
+} from 'react-icons/gi';
 
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -51,13 +46,12 @@ const Services = () => {
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/personales">
-                    Seguros Personales<FaExternalLinkSquareAlt />
-                  </a>
+                  <Link to="/seguros/personales">
+                    Seguros Personales
+                    <FaExternalLinkSquareAlt />
+                  </Link>
                 </h4>
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
             </div>
 
@@ -74,14 +68,12 @@ const Services = () => {
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/empresas">
+                  <Link to="/seguros/empresas">
                     Seguros Empresas
                     <FaExternalLinkSquareAlt />
-                  </a>
+                  </Link>
                 </h4>
-                <p>
-                   
-                </p>
+                <p></p>
               </div>
             </div>
 
@@ -98,14 +90,12 @@ const Services = () => {
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/especiales">
+                  <Link to="/seguros/especiales">
                     Seguros especiales
                     <FaExternalLinkSquareAlt />
-                  </a>
+                  </Link>
                 </h4>
-                <p>
-                
-                </p>
+                <p></p>
               </div>
             </div>
 
@@ -121,13 +111,11 @@ const Services = () => {
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/condominios">
+                  <Link to="/seguros/condominios">
                     Seguros de Condominios <FaExternalLinkSquareAlt />
-                  </a>
+                  </Link>
                 </h4>
-                <p>
-                   
-                </p>
+                <p></p>
               </div>
             </div>
 
@@ -144,11 +132,9 @@ const Services = () => {
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/obligatorios">Seguros Obligatorios</a>
+                  <Link to="/seguros/obligatorios">Seguros Obligatorios</Link>
                 </h4>
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
             </div>
 
@@ -164,15 +150,13 @@ const Services = () => {
                   </i>
                 </div>
                 <h4>
-                  <a href="/seguros/colectivos"> Seguros Colectivos</a>
+                  <Link to="/seguros/colectivos"> Seguros Colectivos</Link>
                 </h4>
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </section>
     </div>
   );

@@ -1,4 +1,4 @@
-import { useEffect, useState, React } from 'react';
+import { useEffect, React } from 'react';
 import { useParams } from 'react-router';
 import data from '../data/seguros.json';
 import AOS from 'aos';
@@ -10,18 +10,14 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Seguros = (props) => {
   const { slug } = useParams();
- 
-   
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-   }, []);
+  }, []);
 
-let  prodSlug = data.filter( (product) => product.categoria.includes(slug))
+  let prodSlug = data.filter((product) => product.categoria.includes(slug));
 
- 
-
- 
   /*
   useEffect(() => {
     setTimeout(() => {
@@ -68,7 +64,6 @@ let  prodSlug = data.filter( (product) => product.categoria.includes(slug))
                   <h3>{data.title} </h3>
                   <p className="fst-italic">{data.descripcion}</p>
 
-                
                   <ul>
                     {data.caracterisitcas.map((cart, k) => {
                       return (

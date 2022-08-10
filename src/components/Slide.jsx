@@ -24,13 +24,11 @@ const Slide = () => {
 
   return (
     <>
-    
       <Carousel fade className={`Carousel d-flex align-items-center ${scroll}`}>
-
-      <Carousel.Item>
+        <Carousel.Item>
           <img
             className="d-block w-100 slideR"
-            src="assets/images/slider/s3.jpg"
+            src="../assets/images/slider/s3.jpg"
             alt="Second slide"
           />
 
@@ -39,14 +37,15 @@ const Slide = () => {
               Asesoramos para que elija lo <span> + </span> conveniente
             </h1>
             <p>
-            Somos Corredores de Seguros con amplia experiencia en seguros Personales y de Empresas
+              Somos Corredores de Seguros con amplia experiencia en seguros
+              Personales y de Empresas
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100 slideR"
-            src="assets/images/slider/s2.jpg"
+            src="../assets/images/slider/s2.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -59,11 +58,11 @@ const Slide = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-       
+
         <Carousel.Item>
           <img
             className="d-block w-100 slideR"
-            src="assets/images/slider/s4.jpg"
+            src="../assets/images/slider/s4.jpg"
             alt="Third slide"
           />
 
@@ -76,7 +75,7 @@ const Slide = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 slideR"
-            src="assets/images/slider/s5.jpg"
+            src="../assets/images/slider/s5.jpg"
             alt="Third slide"
           />
 
@@ -89,7 +88,7 @@ const Slide = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 slideR"
-            src="assets/images/slider/s6.jpg"
+            src="../assets/images/slider/s6.jpg"
             alt="Third slide"
           />
 

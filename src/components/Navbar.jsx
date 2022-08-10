@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [stickyClass, setStickyClass] = useState('');
@@ -22,10 +23,11 @@ const Navbar = () => {
     <>
       <div id="header" className={`d-flex align-items-center ${stickyClass}`}>
         <div>
-          <a className="navbar-brand logo" href="/">
+          <Link className="navbar-brand logo" to="/">
             <img src={logo} alt="" />
-          </a>
+          </Link>
         </div>
+
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <button
@@ -46,35 +48,36 @@ const Navbar = () => {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link   " href="/">
+                  <Link to="/" className="nav-link">
                     HOME
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link " href="/about">
+                  <Link to="/about" className="nav-link">
+                    {' '}
                     CONOZCANOS
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link " href="/services">
+                  <Link className="nav-link " to="/services">
                     NUESTROS SERVICIOS
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link  " href="/brokeris">
+                  <Link className="nav-link  " to="/brokeris">
                     BROKERIS
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link " href="/contact">
+                  <Link className="nav-link " to="/contact">
                     CONTACTO
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link " href="/contact">
+                  <Link className="nav-link " to="/contact">
                     DENUNCIA SINIESTRO
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -97,44 +100,44 @@ const Navbar = () => {
        
         <nav className="navbar navbar-expand-lg bg-light">
         <div className="container d-flex align-items-center justify-content-between">
-        <a href="index.html" className="logo">
+        <Link to="index.html" className="logo">
           <img src={logo} alt="" />
-        </a>
+        </Link>
           <ul>
             <li className="nav-item">
-              <a className="nav-link  active" href="/">
+              <Link className="nav-link  active" to="/">
                 HOME
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/about">
+              <Link className="nav-link " to="/about">
               CONOZCANOS
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link " href="/services">
+              <Link className="nav-link " to="/services">
                NUESTROS SERVICIOS
-              </a>
+              </Link>
             </li>
             
 
 
             <li className="nav-item">
-              <a className="nav-link  " href="/brokeris">
+              <Link className="nav-link  " to="/brokeris">
                 BROKERIS
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link " href="/contact">
+              <Link className="nav-link " to="/contact">
                 CONTACTO
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link " href="/contact">
+              <Link className="nav-link " to="/contact">
               DENUNCIA TU SINIESTRO
-              </a>
+              </Link>
             </li>
 
            
