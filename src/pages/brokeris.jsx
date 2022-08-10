@@ -21,7 +21,7 @@ const brokeris = props => {
                     <div className="card-body">
                         <h5 className="card-title">Sistema Brokeris para Holdings</h5>
                         <p className="card-text">Si Ud. pertenece a un grupo de empresas o Holding, aquí podrá ver toda la información consolidada.</p>
-                        <a href="https://aya.brokeris.cl/holding/" className="btn btn-primary">Ingreso Holdings</a>
+                        <a href="https://aya.brokeris.cl/holding/" className="btn btn-primary" target="_blank" rel="noopener noreferrer" >Ingreso Holdings</a>
                     </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const brokeris = props => {
                     <div className="card-body">
                         <h5 className="card-title">Sistema Brokeris Empresas</h5>
                         <p className="card-text">Si Ud. pertenece a una empresas, aquí podrá ver toda la información consolidada de los seguros contratados .</p>
-                        <a href="https://aya.brokeris.cl/EMPRESAS/" className="btn btn-success" target="_blank">Ingreso Empresas</a>
+                        <a href="https://aya.brokeris.cl/EMPRESAS/" className="btn btn-success" target="_blank" rel="noopener noreferrer" >Ingreso Empresas</a>
                     </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import {useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
@@ -6,17 +6,78 @@ import {
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 
+import emailjs from '@emailjs/browser';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+      emailjs
+      .sendForm(
+        'service_0bzoifg',
+        'template_t8ysxi6',
+        form.current,
+        'SscZsu-RliQr-Vjzg'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success('Se ha registrado en nuestra  de contacto!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+          
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error('ocurrió un error al enviar el mensaje!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+        }
+      );
+  };
+
   return (
     <footer id="footer">
+       <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        />
+        {/* Same as */}
+        <ToastContainer />
       <div className="footer-newsletter">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <h4>Suscribase a nuestra Lista de correos</h4>
               <p>Tenemos mucha información que queremos compartir con usted.</p>
-              <form>
-                <input type="email" name="email" />
+              <form id="contactForm" ref={form} onSubmit={sendEmail}>
+                <input type="email"  
+                  placeholder="Email"
+                  name="from_email"
+                  id="from_email"/>
                 <input type="submit" value="Subscribe" />
               </form>
             </div>
