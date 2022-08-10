@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div id="header">
+      <div id="header" className={`d-flex align-items-center ${stickyClass}`}>
         <div>
           <a className="navbar-brand logo" href="/">
             <img src={logo} alt="" />

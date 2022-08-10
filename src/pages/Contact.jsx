@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
-import AOS from 'aos';
+ import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const form = useRef();
@@ -15,11 +17,11 @@ const Contact = () => {
     AOS.refresh();
   }, []);
 
+ 
+
   const sendEmail = (e) => {
     e.preventDefault();
-    //emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-
-    emailjs
+      emailjs
       .sendForm(
         'service_itrydx9',
         'template_smw30d1',
@@ -29,9 +31,28 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success('Mensaje enviado a nuestro centro de contacto!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+          
         },
         (error) => {
           console.log(error.text);
+          toast.error('ocurrió un error al enviar el mensaje!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
         }
       );
   };
@@ -171,6 +192,22 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        />
+        {/* Same as */}
+        <ToastContainer />
+      
     </section>
   );
 };
