@@ -127,7 +127,8 @@
       "caracterisitcas": [ 
       
         "Seguros de vigilantes y guardias",
-        "Seguro covid-19 nacional e internacional",
+        "Seguro covid-19 nacional",
+        "Seguro covid-19 internacional",
         "Seguro responsabilidad civil internacional",
         "Seguro vida conductor",
         "Seguro vida en viaje o asistencia"
@@ -135,7 +136,9 @@
 
 
       ],
-      "categoria": "obligatorios"
+      "categoria": "obligatorios",
+      "url":"https://segurocovid.bicevida.cl/?broker=R4DS",
+      "url_desc": "Contrate aqui el seguro Covid Nacional"
     },
 
     {

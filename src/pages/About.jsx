@@ -30,11 +30,11 @@ const About = () => {
               <div className="col text-center">
                 <div className="spacer-single"></div>
                 <h1> CONOZCANOS </h1>
-                <h2>somos A&A .</h2>
-                <h3>
-                  {' '}
-                  <FontAwesomeIcon icon={faPlus} />{' '}
-                </h3>
+                 <br />
+                 <br />
+                 <br />
+                 <br />
+               
               </div>
               <div className="clearfix"></div>
             </div>
@@ -45,7 +45,10 @@ const About = () => {
       <section id="about" className="about section-bg">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2>Acera de...</h2>
+
+          <h2>
+                Somos asociados al  <a href='https://colegiodecorredores.cl/' target="blank" rel="noopener noreferrer">Colegio de corredores y asesores previsionales de Chile  </a>
+          </h2> 
             <h3>
               A&A Más <span>Corredores de Seguros</span>
             </h3>

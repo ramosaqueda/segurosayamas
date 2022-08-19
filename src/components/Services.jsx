@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
@@ -9,6 +11,9 @@ import {
   faCar,
   faBuilding,
   faSailboat,
+  
+  
+
 } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -30,12 +35,12 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <Link to="/services">SEGUROS PERSONALES</Link>
+                <Link to="seguros/personales">SEGUROS PERSONALES</Link>
               </h4>
 
               <p className="description">
-                Para proteger tus bienes y, lo más preciado, tu familia y tu
-                vida .
+              Para proteger tus bienes y, lo más preciado, tu familia y tu vida
+.
               </p>
             </div>
           </div>
@@ -48,11 +53,10 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <Link to="/services">SEGUROS EMPRESAS</Link>
+                <Link to="seguros/empresas">SEGUROS EMPRESAS</Link>
               </h4>
               <p className="description">
-                Distintos seguros para vehiculos, carga, construcción,
-                incendios, etc.
+                Distintos seguros para vehiculos, carga, construcción, incendios, etc.
               </p>
             </div>
           </div>
@@ -65,11 +69,10 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <Link to="/services">SEGUROS ESPECIALES</Link>
+                <Link to="seguros/especiales">SEGUROS ESPECIALES</Link>
               </h4>
               <p className="description">
-                Contamos con una completa oferta de productos de seguros
-                agricolas, casco marítimo, yates, y muchos más.
+                Contamos con una completa oferta de productos de seguros agricolas, casco marítimo, yates, y muchos más.
               </p>
             </div>
           </div>
@@ -82,13 +85,15 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <Link to="/services">SEGUROS CONDOMIONIOS</Link>
+                <Link to="seguros/condominios">SEGUROS CONDOMIONIOS</Link>
               </h4>
               <p className="description">
-                Maximizamos las coberturas de tu comunidad.
+              Maximizamos las coberturas de tu comunidad.
+
               </p>
             </div>
           </div>
+
 
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div className="icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -98,13 +103,15 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <Link to="/services">SEGUROS OBLIGATORIOS</Link>
+                <Link to="/seguros/obligatorios">SEGUROS OBLIGATORIOS</Link>
               </h4>
               <p className="description">
-                Contamos con todos los seguros obligatorios.
+              Contamos con todos los seguros obligatorios.
+
               </p>
             </div>
           </div>
+
 
           <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div className="icon-box" data-aos="fade-up" data-aos-delay="400">
@@ -114,11 +121,11 @@ export const Services = () => {
                 </i>
               </div>
               <h4 className="title">
-                <Link to="/services">SEGUROS COLECTIVOS</Link>
+                <Link to="/seguros/colectivos">SEGUROS COLECTIVOS</Link>
               </h4>
               <p className="description">
-                Maximisamos sus recursos para entregarles a sus colaboradores
-                las mejores coberturas.
+              Maximisamos sus recursos para entregarles a sus colaboradores las mejores coberturas.
+
               </p>
             </div>
           </div>

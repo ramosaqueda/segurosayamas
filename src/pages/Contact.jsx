@@ -61,11 +61,12 @@ const Contact = () => {
             <span>Contactenos</span>
           </h3>
           <p>
-            En A&A +, nuestra principal misión es ayudar a nuestros clientes
-            para que tomen las mejores deciciones, deciones de vida, sabemos la
+             En A&A +, nuestra principal misión es ayudar a nuestros clientes
+            para que tomen las mejores decisiones de vida, sabemos la
             importancia de sentirse seguro en cada momento, por esta razón,
             estamos prestos a responder sus consultas y a considerar sus
             sugerencias.
+
           </p>
         </div>
 

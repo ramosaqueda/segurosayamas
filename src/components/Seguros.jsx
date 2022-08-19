@@ -36,13 +36,7 @@ const Seguros = (props) => {
               A&A Más <span>Corredores de Seguros</span>
             </h3>
             <p>
-              A&A Más Corredores de seguros está presente desde 1998, una
-              compañía familair formada e integrada por profesionales de vasta
-              trayectoria en el mercado. Nuestros profesionales manejan las
-              diferentes áreas de Seguros, lo que le permite a nuestros clientes
-              sentirse apoyados en todas sus desciones. Manejamos una diversa
-              cartera de servicios con las principlaes Aseguradoras nacionales e
-              internacionales que operan en el país.
+            En A&A + LTDA, nuestra principal misión es ayudar a nuestros clientes para que tomen las mejores decisiones en su vida, sabemos la importancia de sentirse seguro en cada momento, por esta razón, estamos prestos a responder sus consultas y a considerar sus sugerencias.
             </p>
           </div>
 
@@ -74,10 +68,13 @@ const Seguros = (props) => {
                       );
                     })}
                   </ul>
+ 
 
-                  <button type="button" className="btn btn-primary">
-                    Contratar
-                  </button>
+        
+
+                  
+                    {data.url  ? <a href={data.url} target="blank" rel="noopener noreferrer"><button type="button" className="btn btn-primary"> {data.url_desc}</button></a> : ''}
+                  
                 </div>
 
                 <div
